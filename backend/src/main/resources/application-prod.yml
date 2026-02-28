@@ -1,0 +1,21 @@
+server:
+  port: ${PORT:8080}
+
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+
+jwt:
+  secret: ${JWT_SECRET}
+
+vnPay:
+  url: ${VNPAY_URL}
+  returnUrl: ${VNPAY_RETURNURL}
+  tmnCode: ${VNPAY_TMNCODE}
+  secretKey: ${VNPAY_HASHSECRET}
