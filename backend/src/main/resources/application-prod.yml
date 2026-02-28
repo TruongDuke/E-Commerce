@@ -19,3 +19,9 @@ vnPay:
   returnUrl: ${VNPAY_RETURNURL}
   tmnCode: ${VNPAY_TMNCODE}
   secretKey: ${VNPAY_HASHSECRET}
+  version: 2.1.0
+  command: pay
+  orderType: other
+  currCode: VND
+  locale: vn
+  apiUrl: https://sandbox.vnpayment.vn/merchant_webapi/api/transaction
