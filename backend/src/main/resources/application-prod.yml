@@ -25,3 +25,4 @@ vnPay:
   currCode: VND
   locale: vn
   apiUrl: https://sandbox.vnpayment.vn/merchant_webapi/api/transaction
+  timeoutExpress: 15
