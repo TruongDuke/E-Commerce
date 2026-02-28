@@ -28,11 +28,8 @@ public class CorsConfig implements WebMvcConfigurer {
      */ @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        // Allow specific origins including the React app on port 5173 and other common
-        // ports
-        configuration.setAllowedOriginPatterns(
-                Arrays.asList("http://localhost:5173", "http://localhost:3000", "http://localhost:8080",
-                        "http://localhost:*"));
+        // Allow all origins (for development/testing - not recommended for production)
+        configuration.setAllowedOriginPatterns(Arrays.asList("*"));
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"));
         // Allow all headers for debugging and payment processing
         configuration.setAllowedHeaders(Arrays.asList("*"));
